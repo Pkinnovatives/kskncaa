@@ -1,0 +1,13 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Allow public uploads and reads for resumes (required for getDownloadURL without auth)
+    match /resumes/{allPaths=**} {
+      allow read, write: if true;
+    }
+    // Default rule
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
