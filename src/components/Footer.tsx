@@ -11,13 +11,13 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-4">
             <div className="flex flex-col mb-6">
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-8 h-8 bg-white text-slate-950 flex items-center justify-center font-serif font-bold rounded">KS</div>
+                <div className="w-8 h-8 bg-white text-slate-950 flex items-center justify-center font-serif font-bold rounded">CA</div>
                 <span className="font-serif font-bold text-2xl tracking-tight">K S K N</span>
               </div>
               <span className="text-xs text-slate-500 uppercase tracking-[0.2em] font-medium">And Associates LLP</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-sm">
-              Empowering your next financial breakthrough with trusted audit, taxation and advisory expertise. Committed to integrity and excellence since 2003.
+              Empowering your next financial breakthrough with trusted audit, taxation and advisory expertise. Committed to integrity.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-slate-500 hover:text-white transition-colors"><Linkedin className="h-5 w-5" /></a>

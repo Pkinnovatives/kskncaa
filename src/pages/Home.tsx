@@ -6,9 +6,9 @@ import { AccordionItem } from '../components/ui/Accordion';
 
 const Home = () => {
   const stats = [
-    { label: 'Years Experience', value: '23+', icon: Clock },
-    { label: 'Awards & Recognitions', value: '20+', icon: Award },
-    { label: 'Professional Consultants', value: '50+', icon: Users },
+    { label: 'Years Of Industry Experience', value: '10+', icon: Clock },
+    { label: 'Awards & Recognitions', value: '6+', icon: Award },
+    { label: 'Professional Consultants', value: '10+', icon: Users },
     { label: 'Satisfied Clients', value: '200+', icon: Briefcase },
   ];
 
