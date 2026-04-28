@@ -120,12 +120,12 @@ const Home = () => {
                 <div className="space-y-4 mt-12">
                   <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl">
                     <Clock className="h-8 w-8 text-blue-400 mb-3" />
-                    <div className="text-3xl font-bold text-white">23+</div>
+                    <div className="text-3xl font-bold text-white">10+</div>
                     <div className="text-sm text-slate-400">Years of Excellence</div>
                   </div>
                   <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl">
                     <Users className="h-8 w-8 text-indigo-400 mb-3" />
-                    <div className="text-3xl font-bold text-white">50+</div>
+                    <div className="text-3xl font-bold text-white">10+</div>
                     <div className="text-sm text-slate-400">Expert Consultants</div>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ const Home = () => {
                   </div>
                   <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl">
                     <Award className="h-8 w-8 text-amber-400 mb-3" />
-                    <div className="text-3xl font-bold text-white">20+</div>
+                    <div className="text-3xl font-bold text-white">6+</div>
                     <div className="text-sm text-slate-400">Industry Awards</div>
                   </div>
                 </div>

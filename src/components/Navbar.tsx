@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
-
+import logo from "../calogo.png"; // adjust path if needed
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -38,30 +38,45 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="flex items-center gap-3 group">
-              <div className={cn(
-                "w-10 h-10 flex items-center justify-center font-serif font-bold text-xl rounded-lg transition-colors duration-300",
-                scrolled || isOpen ? "bg-slate-900 text-white" : "bg-white text-slate-900 shadow-lg"
-              )}>
-                KS
-              </div>
-              <div className="flex flex-col">
-                <span className={cn(
-                  "font-serif font-bold leading-none text-lg transition-colors duration-300",
-                  scrolled || isOpen ? "text-slate-900" : "text-white"
-                )}>
-                  K S K N
-                </span>
-                <span className={cn(
-                  "text-[10px] uppercase tracking-[0.2em] font-medium transition-colors duration-300",
-                  scrolled || isOpen ? "text-slate-500" : "text-slate-300"
-                )}>
-                  And Associates LLP
-                </span>
-              </div>
-            </Link>
-          </div>
+         <div className="flex-shrink-0 flex items-center">
+  <Link to="/" className="flex items-center gap-3 group">
+    
+    <div
+      className={cn(
+        "w-10 h-10 flex items-center justify-center rounded-lg overflow-hidden transition-colors duration-300",
+        scrolled || isOpen
+          ? "bg-slate-900"
+          : "bg-white shadow-lg"
+      )}
+    >
+      <img
+        src={logo}
+        alt="KSKN Logo"
+        className="w-full h-full object-contain p-1"
+      />
+    </div>
+
+    <div className="flex flex-col">
+      <span
+        className={cn(
+          "font-serif font-bold leading-none text-lg transition-colors duration-300",
+          scrolled || isOpen ? "text-slate-900" : "text-white"
+        )}
+      >
+        K S K N
+      </span>
+      <span
+        className={cn(
+          "text-xs tracking-wide font-medium transition-colors duration-300",
+          scrolled || isOpen ? "text-slate-500" : "text-slate-300"
+        )}
+      >
+        And Associates LLP
+      </span>
+    </div>
+
+  </Link>
+</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
